@@ -1,0 +1,12 @@
+
+platform :ios, '8.0'
+
+target 'Networking' do
+  use_frameworks!
+
+  pod 'Moya'
+  pod 'Moya/RxSwift'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'ReachabilitySwift', '~> 3'
+end
