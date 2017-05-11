@@ -8,9 +8,13 @@
 
 import UIKit
 import SnapKit
+import EZSwiftExtensions
 
-class FourViewController: UIViewController {
-
+class FourViewController: UIViewController,MLPhotoBrowserViewControllerDelegate,MLPhotoBrowserViewControllerDataSource {
+    var lastSelectPhotos:NSMutableArray!
+    var lastSelectAssets:NSMutableArray!
+    var imageContentView:UIView!
+    var photos:NSArray!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "选择图片"
@@ -101,17 +105,62 @@ class FourViewController: UIViewController {
 
         mutiplatePicture.addTapGesture { (action) in
             //多选图片
+            self.showWithPreview(preview: true)
             
         }
-        
+        imageContentView = UIView.init(x: 0, y: 300, w: view.size.width, h: 200)
+        view.addSubview(imageContentView)
         // Do any additional setup after loading the view.
+    }
+    func showWithPreview(preview:Bool){
+        
+       let picker = SuPhotoPicker()
+        picker.selectedCount = 10
+        picker.preViewCount = 2
+        picker.show(inSender: self) { (photos) in
+            self.showSelectedImage(images: photos!)
+        }
+        
+        
+    }
+    func showSelectedImage(images:Array<UIImage>){
+        let width = (view.size.width-50)/4
+        photos = images as NSArray!
+        for i in 0..<images.count{
+            let imageView = UIImageView.init(frame: CGRect.init(x: 10+(width+10)*CGFloat(i), y: 0, w: width, h: width))
+            imageView.image = images[i]
+            imageView.tag = i
+                        print(imageView.tag)
+            
+            imageView.addTapGesture(action: { (action) in
+                let indexPath = NSIndexPath.init(row: imageView.tag, section: 0)
+                let photoBrowser = MLPhotoBrowserViewController()
+                photoBrowser.status = .zoom
+                photoBrowser.delegate = self
+                photoBrowser.dataSource = self
+                photoBrowser.currentIndexPath = NSIndexPath.init(item: indexPath.row, section: 0) as IndexPath!
+                photoBrowser.show()
+                
+            })
+            imageContentView.addSubview(imageView)
+
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    func photoBrowser(_ photoBrowser: MLPhotoBrowserViewController!, numberOfItemsInSection section: UInt) -> Int {
+        return photos.count
+    }
+    func photoBrowser(_ photoBrowser: MLPhotoBrowserViewController!, photoAt indexPath: IndexPath!) -> MLPhotoBrowserPhoto! {
+        let photo = MLPhotoBrowserPhoto()
+        photo.photoObj = photos[indexPath.row]
+        let imageView:UIImageView = self.imageContentView.subviews[indexPath.row] as! UIImageView
+        photo.toView = imageView
+        photo.thumbImage = imageView.image
+        return photo
+    }
     /*
     // MARK: - Navigation
 
@@ -122,6 +171,15 @@ class FourViewController: UIViewController {
     }
     */
 
+}
+extension FourViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ZLCollectionCell", for: indexPath)
+        return cell
+    }
 }
 extension FourViewController:UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -147,6 +205,8 @@ extension FourViewController:UIImagePickerControllerDelegate,UINavigationControl
     }
     func uploadImage(image:UIImage,path:String){
         //上传图片的接口
+        
     }
+    
 
 }
