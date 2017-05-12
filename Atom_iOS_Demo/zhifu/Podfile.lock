@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.3.0)
+  - AliPay (2.1.2)
+  - DZNEmptyDataSet (1.8.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3.0)
+  - AliPay (~> 2.1.2)
+  - DZNEmptyDataSet (~> 1.8.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AliPay: 2bd35a4e486d2a8c035043023cd846e886bb21d1
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+
+PODFILE CHECKSUM: 64a97197e44d24968bfa34b1e01822c4fd1acf77
+
+COCOAPODS: 1.2.0
