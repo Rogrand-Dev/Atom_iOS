@@ -14,6 +14,8 @@
 		C465BF811EC5AAC1005534F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C465BF7F1EC5AAC1005534F8 /* LaunchScreen.storyboard */; };
 		C465BF8C1EC5AAC1005534F8 /* SegmentViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C465BF8B1EC5AAC1005534F8 /* SegmentViewDemoTests.swift */; };
 		C465BF971EC5AAC1005534F8 /* SegmentViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C465BF961EC5AAC1005534F8 /* SegmentViewDemoUITests.swift */; };
+		C465BFA51EC5AACE005534F8 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C465BFA41EC5AACE005534F8 /* SegmentView.swift */; };
+		C465BFA71EC5AB54005534F8 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = C465BFA61EC5AB54005534F8 /* Then.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C465BF921EC5AAC1005534F8 /* SegmentViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C465BF961EC5AAC1005534F8 /* SegmentViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewDemoUITests.swift; sourceTree = "<group>"; };
 		C465BF981EC5AAC1005534F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C465BFA41EC5AACE005534F8 /* SegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		C465BFA61EC5AB54005534F8 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				C465BF761EC5AAC1005534F8 /* AppDelegate.swift */,
 				C465BF781EC5AAC1005534F8 /* ViewController.swift */,
+				C465BFA41EC5AACE005534F8 /* SegmentView.swift */,
+				C465BFA61EC5AB54005534F8 /* Then.swift */,
 				C465BF7A1EC5AAC1005534F8 /* Main.storyboard */,
 				C465BF7D1EC5AAC1005534F8 /* Assets.xcassets */,
 				C465BF7F1EC5AAC1005534F8 /* LaunchScreen.storyboard */,
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C465BFA71EC5AB54005534F8 /* Then.swift in Sources */,
 				C465BF791EC5AAC1005534F8 /* ViewController.swift in Sources */,
+				C465BFA51EC5AACE005534F8 /* SegmentView.swift in Sources */,
 				C465BF771EC5AAC1005534F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
