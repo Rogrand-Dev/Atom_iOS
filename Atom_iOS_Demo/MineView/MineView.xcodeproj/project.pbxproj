@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C410CC6D1EDEA45F004C8CAE /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410CC6C1EDEA45F004C8CAE /* Then.swift */; };
+		C410CC6F1EDEA6CA004C8CAE /* MineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410CC6E1EDEA6CA004C8CAE /* MineHeaderView.swift */; };
+		C410CC721EDEBC16004C8CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C410CC711EDEBC16004C8CAE /* Assets.xcassets */; };
+		C410CC741EDEC8F3004C8CAE /* MineBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410CC731EDEC8F3004C8CAE /* MineBodyView.swift */; };
+		C410CC761EDEC946004C8CAE /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410CC751EDEC946004C8CAE /* ItemsView.swift */; };
 		C4924E821EDE4D3E0077680A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4924E811EDE4D3E0077680A /* AppDelegate.swift */; };
 		C4924E841EDE4D3E0077680A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4924E831EDE4D3E0077680A /* ViewController.swift */; };
 		C4924E871EDE4D3E0077680A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4924E851EDE4D3E0077680A /* Main.storyboard */; };
-		C4924E891EDE4D3E0077680A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4924E881EDE4D3E0077680A /* Assets.xcassets */; };
 		C4924E8C1EDE4D3E0077680A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4924E8A1EDE4D3E0077680A /* LaunchScreen.storyboard */; };
 		C4924E971EDE4D3F0077680A /* MineViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4924E961EDE4D3F0077680A /* MineViewTests.swift */; };
 		C4924EA21EDE4D3F0077680A /* MineViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4924EA11EDE4D3F0077680A /* MineViewUITests.swift */; };
+		C4924EB01EDE52A70077680A /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4924EAF1EDE52A70077680A /* MineViewController.swift */; };
+		C4EA71361EE13F4E008513EC /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA71351EE13F4E008513EC /* UIVIewExtension.swift */; };
+		C4EA71391EE15650008513EC /* NormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA71381EE15650008513EC /* NormalView.swift */; };
+		C4F7FDFD1EE5092500F20388 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7FDFC1EE5092500F20388 /* Utility.swift */; };
+		C4F7FDFF1EE53DB000F20388 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7FDFE1EE53DB000F20388 /* PersonInfoViewController.swift */; };
+		C4F7FE011EE53DC200F20388 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7FE001EE53DC200F20388 /* SettingViewController.swift */; };
+		C4F7FE031EE5621700F20388 /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7FE021EE5621700F20388 /* UILabelPadding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C410CC6C1EDEA45F004C8CAE /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		C410CC6E1EDEA6CA004C8CAE /* MineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeaderView.swift; sourceTree = "<group>"; };
+		C410CC711EDEBC16004C8CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C410CC731EDEC8F3004C8CAE /* MineBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineBodyView.swift; sourceTree = "<group>"; };
+		C410CC751EDEC946004C8CAE /* ItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		C4924E7E1EDE4D3E0077680A /* MineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4924E811EDE4D3E0077680A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4924E831EDE4D3E0077680A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4924E861EDE4D3E0077680A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C4924E881EDE4D3E0077680A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4924E8B1EDE4D3E0077680A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4924E8D1EDE4D3E0077680A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4924E921EDE4D3E0077680A /* MineViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +62,13 @@
 		C4924E9D1EDE4D3F0077680A /* MineViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4924EA11EDE4D3F0077680A /* MineViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewUITests.swift; sourceTree = "<group>"; };
 		C4924EA31EDE4D3F0077680A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4924EAF1EDE52A70077680A /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		C4EA71351EE13F4E008513EC /* UIVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		C4EA71381EE15650008513EC /* NormalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalView.swift; sourceTree = "<group>"; };
+		C4F7FDFC1EE5092500F20388 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		C4F7FDFE1EE53DB000F20388 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		C4F7FE001EE53DC200F20388 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C4F7FE021EE5621700F20388 /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C410CC701EDEA6D0004C8CAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C410CC6E1EDEA6CA004C8CAE /* MineHeaderView.swift */,
+				C410CC731EDEC8F3004C8CAE /* MineBodyView.swift */,
+				C410CC751EDEC946004C8CAE /* ItemsView.swift */,
+				C4EA71381EE15650008513EC /* NormalView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		C4924E751EDE4D3E0077680A = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +132,13 @@
 			children = (
 				C4924E811EDE4D3E0077680A /* AppDelegate.swift */,
 				C4924E831EDE4D3E0077680A /* ViewController.swift */,
+				C4924EAF1EDE52A70077680A /* MineViewController.swift */,
+				C4F7FDFE1EE53DB000F20388 /* PersonInfoViewController.swift */,
+				C4F7FE001EE53DC200F20388 /* SettingViewController.swift */,
+				C410CC701EDEA6D0004C8CAE /* View */,
+				C4EA71371EE14E20008513EC /* Utility */,
+				C410CC711EDEBC16004C8CAE /* Assets.xcassets */,
 				C4924E851EDE4D3E0077680A /* Main.storyboard */,
-				C4924E881EDE4D3E0077680A /* Assets.xcassets */,
 				C4924E8A1EDE4D3E0077680A /* LaunchScreen.storyboard */,
 				C4924E8D1EDE4D3E0077680A /* Info.plist */,
 			);
@@ -123,6 +161,17 @@
 				C4924EA31EDE4D3F0077680A /* Info.plist */,
 			);
 			path = MineViewUITests;
+			sourceTree = "<group>";
+		};
+		C4EA71371EE14E20008513EC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C410CC6C1EDEA45F004C8CAE /* Then.swift */,
+				C4EA71351EE13F4E008513EC /* UIVIewExtension.swift */,
+				C4F7FDFC1EE5092500F20388 /* Utility.swift */,
+				C4F7FE021EE5621700F20388 /* UILabelPadding.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4924E8C1EDE4D3E0077680A /* LaunchScreen.storyboard in Resources */,
-				C4924E891EDE4D3E0077680A /* Assets.xcassets in Resources */,
+				C410CC721EDEBC16004C8CAE /* Assets.xcassets in Resources */,
 				C4924E871EDE4D3E0077680A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F7FDFD1EE5092500F20388 /* Utility.swift in Sources */,
+				C4EA71391EE15650008513EC /* NormalView.swift in Sources */,
+				C410CC6D1EDEA45F004C8CAE /* Then.swift in Sources */,
 				C4924E841EDE4D3E0077680A /* ViewController.swift in Sources */,
+				C4F7FE031EE5621700F20388 /* UILabelPadding.swift in Sources */,
+				C410CC761EDEC946004C8CAE /* ItemsView.swift in Sources */,
+				C4F7FDFF1EE53DB000F20388 /* PersonInfoViewController.swift in Sources */,
 				C4924E821EDE4D3E0077680A /* AppDelegate.swift in Sources */,
+				C4924EB01EDE52A70077680A /* MineViewController.swift in Sources */,
+				C410CC6F1EDEA6CA004C8CAE /* MineHeaderView.swift in Sources */,
+				C4EA71361EE13F4E008513EC /* UIVIewExtension.swift in Sources */,
+				C410CC741EDEC8F3004C8CAE /* MineBodyView.swift in Sources */,
+				C4F7FE011EE53DC200F20388 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +572,7 @@
 				C4924EA81EDE4D3F0077680A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4924EA91EDE4D3F0077680A /* Build configuration list for PBXNativeTarget "MineViewTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +581,7 @@
 				C4924EAB1EDE4D3F0077680A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4924EAC1EDE4D3F0077680A /* Build configuration list for PBXNativeTarget "MineViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +590,7 @@
 				C4924EAE1EDE4D3F0077680A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

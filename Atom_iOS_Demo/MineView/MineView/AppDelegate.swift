@@ -15,7 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let tabbar = UITabBarController.init()
+        
+        let vc = ViewController()
+        let navi = UINavigationController.init(rootViewController: vc)
+        navi.tabBarItem = UITabBarItem.init(title: "main", image: nil, tag: 0)
+
+        
+        let mine = MineViewController()
+        let mineNavi = UINavigationController.init(rootViewController: mine)
+        mineNavi.tabBarItem = UITabBarItem.init(title: "mine", image: #imageLiteral(resourceName: "icon_login_user"), tag: 1)
+
+        tabbar.viewControllers = [navi, mineNavi]
+        
+        self.window?.rootViewController = tabbar
+        self.window?.backgroundColor = UIColor.white
+        
         return true
     }
 
