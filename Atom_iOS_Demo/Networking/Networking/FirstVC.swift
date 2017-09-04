@@ -33,7 +33,7 @@ extension XAppDefaultAPI:TargetType,XAuthType {
     }
     
     var baseURL: URL {
-        return URL(string:"")!
+        return URL(string:"xxx")!
     }
     
     var sampleData: Data {
